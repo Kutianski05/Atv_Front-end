@@ -1,94 +1,87 @@
-<!--Formato do trabalho igual so o tema de Snuke-->
 <!DOCTYPE html>
-<link lang="pt-br">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festival do Snuke</title>
-    <link rel="stylesheet" href="style.css">
-    </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Festival do Snuke</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-
 <header>
   <h1>Festival do Snuke</h1>
   <p>O maior festival de Snuke do mundo</p>
 </header>
 <main class="container">
-<section class="bloco">
-  <h2>Apresentação do festival</h2>
-  <img src="" alt="Festival"/>
-  <br /><br />
-<div class="midia">
-  <video controls>
-    <source src="video.mp4" type="video/mp4"/>
-  </video>
-  <audio controls>
-    <source src="audio.mp3" type="audio/mpeg"/>
-  </audio>
-</div>
-</section>
-
-<section class="bloco">
-  <h2>Horários das partidas</h2>
-  <div class="tabela">
-    <table>
-      <tr>
-        <th>Horario</th>
-        <th>Jogadores</th>
-        <th>Mesa</th>
-      </tr>
-
-      <tr>
-        <td>20:00</td>
-        <td>Baianinho x Felipinho</td>
-        <td>Mesa 1</td>
-      </tr>
-
-      <tr>
-        <td>18:00</td>
-        <td>Jogador 1 x Jogador 2</td>
-        <td>Mesa 3</td>
-      </tr>
-
-      <tr>
-        <td>19:00</td>
-        <td>Jogador 3 x Jogador 4</td>
-        <td>Mesa 4</td>
-      </tr>
-    </table>
-  </div>
-</section>
-
-<section class="bloco">
-  <h2>Inscrição</h2>
-  <form id="formEvento">
-    <label>Nome:</label>
-    <input type="text" required/>
-
-    <label>Email:</label>
-    <input type="email" required/>
-
-    <label>Telefone:</label>
-    <input type="tel" required/>
-
-    <p>Tipo do ingresso:</p>
-
-    <div class="radios">
-      <label><input type="radio" name="ingresso" />Mesa 1</label>
-      <label><input type="radio" name="ingresso" />Mesa 3</label>
-      <label><input type="radio" name="ingresso" />Mesa 4</label>
+  <section class="bloco">
+    <h2>Apresentação do festival</h2>
+    <img src="img.jpg" alt="Festival">
+    <br><br>
+    <div class="midia">
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/Zgl2V6moSYg"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
     </div>
+  </section>
+  <section class="bloco">
+    <h2>Horários das partidas</h2>
+    <div class="tabela">
+      <table>
+        <tr>
+          <th>Horário</th>
+          <th>Jogadores</th>
+          <th>Mesa</th>
+        </tr>
 
-    <label class="check">
-      <input type="checkbox"/> Receber atualizações por e-mail
-    </label>
+        <tr>
+          <td>18:00</td>
+          <td>Jogador 1 x Jogador 2</td>
+          <td>Mesa 3</td>
+        </tr>
 
-    <buttom type="submit">Enviar</buttom>
-  </form>
-</section>
- 
+        <tr>
+          <td>19:00</td>
+          <td>Jogador 3 x Jogador 4</td>
+          <td>Mesa 4</td>
+        </tr>
+
+        <tr>
+          <td>20:00</td>
+          <td>Baianinho x Felipinho</td>
+          <td>Mesa 1</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="bloco">
+    <h2>Inscrição</h2>
+    <form id="formEvento">
+      <label>Nome:</label>
+      <input type="text" id="nome" required>
+      <label>Email:</label>
+      <input type="email" id="email" required>
+      <label>Telefone:</label>
+      <input type="tel" id="telefone" required>
+      
+      <p>Tipo do ingresso:</p>
+
+      <div class="radios">
+        <label><input type="radio" name="ingresso" value="Mesa 1" required> Mesa 1</label>
+        <label><input type="radio" name="ingresso" value="Mesa 3"> Mesa 3</label>
+        <label><input type="radio" name="ingresso" value="Mesa 4"> Mesa 4</label>
+      </div>
+      <label class="check">
+        <input type="checkbox" id="emailCheck"> Receber atualizações por e-mail
+      </label>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 </main>
 
 <script src="main.js"></script>
-  </body>
-  </html>
+</body>
+</html>
